@@ -95,7 +95,7 @@ export const Game = () => {
                     })
                     setStarted(true)
                     setMoves(message.payload.moves);
-                    message.payload.moves.map(x => {
+                    message.payload.moves.map((x: IMove) => {
                         if (isPromoting(chess, x.from, x.to)) {
                             chess.move({...x,  promotion: 'q' })
                         } else {
