@@ -17,13 +17,14 @@ This platform allows users to:
 ### Explore The Interface:
 
 #### Landing Page
-![Landing Page](apps/frontend/public/Screenshot_2024-07-05_at_6.00.18_PM.png)
+![Landing Page](<apps/frontend/public/Screenshot_2024-07-05_at_6.00.18_PM.png>)
 
 #### Login Page
-![Login Page](apps/frontend/public/Screenshot_2024-07-05_at_6.00.37_PM.png)
+![Login Page](<apps/frontend/public/Screenshot_2024-07-05_at_6.00.37_PM.png>)
 
 #### Gameplay
-![Gameplay](apps/frontend/public/Screenshot_2024-07-05_at_6.02.01_PM.png)
+![Gameplay](<apps/frontend/public/Screenshot_2024-07-05_at_6.02.01_PM.png>)
 
 #### Real-Time Updates
-![Real-Time Updates](apps/frontend/public/Screenshot_2024-07-05_at_7.06.48_PM.png)
+![Real-Time Updates](<apps/frontend/public/Screenshot_2024-07-05_at_7.06.48_PM.png>)
+
