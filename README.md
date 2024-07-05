@@ -16,7 +16,11 @@ This platform allows users to:
 
 ### Explore The Interface:
 
-![Landing Page](<Screenshot 2024-07-05 at 6.00.18 PM.png>"Landing Page")
-![Login Page](Screenshot 2024-07-05 at 6.00.37 PM.png"Login Page")
-![Gameplay](Screenshot 2024-07-05 at 6.02.01 PM.png"Gameplay")
-![Real-Time Updates](<Screenshot 2024-07-05 at 7.06.48 PM.png>"Real-Time Updates")
+Landing Page
+![Landing Page](<Screenshot 2024-07-05 at 6.00.18 PM.png>)
+Login Page
+![Login Page](<Screenshot 2024-07-05 at 6.00.37 PM.png>)
+Gameplay
+![Gameplay](<Screenshot 2024-07-05 at 6.02.01 PM.png>)
+Real-Time Updates
+![Real-Time Updates](<Screenshot 2024-07-05 at 7.06.48 PM.png>)
