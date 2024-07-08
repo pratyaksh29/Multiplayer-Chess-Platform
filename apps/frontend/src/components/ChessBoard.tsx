@@ -27,13 +27,11 @@ export function isPromoting(chess: Chess, from: Square, to: Square) {
     .includes(to);
 }
 
-export const ChessBoard = ({ gameId, started, myColor, chess, board, socket, setBoard, moves, setMoves }: {
+export const ChessBoard = ({ gameId, started, myColor, chess, board, socket, setBoard, setMoves }: {
   myColor: Color,
   gameId: string,
   started: boolean,
   chess: Chess;
-  moves: any[]; // Replace 'any' with the appropriate type if you have it
-  setMoves: React.Dispatch<React.SetStateAction<any[]>>; // Replace 'any' with the appropriate type if you have it
   setBoard: React.Dispatch<React.SetStateAction<({
     square: Square;
     type: PieceSymbol;
@@ -45,6 +43,7 @@ export const ChessBoard = ({ gameId, started, myColor, chess, board, socket, set
     color: Color;
   } | null)[][];
   socket: WebSocket;
+  setMoves: React.Dispatch<React.SetStateAction<any[]>>;
 }) => {
   const [from, setFrom] = useState<null | Square>(null);
   const isMyTurn = myColor === chess.turn();
