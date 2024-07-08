@@ -1,7 +1,7 @@
 
 import { atom, selector } from "recoil";
 
-export const BACKEND_URL = "http://localhost:3000";
+export const BACKEND_URL = "https://multiplayer-chess-platform-backend.vercel.app";
 export interface User {
     token: string;
     id: string;
