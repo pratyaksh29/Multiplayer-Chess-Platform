@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx esbuild src/index.ts --bundle --platform=node --outfile=dist/index.js --external:express --external:cors --external:dotenv --external:express-session --external:passport",
+    "build": "npx esbuild src/index.ts --bundle --platform=node --outfile=dist/index.js --external:express --external:cors --external:dotenv --external:express-session --external:passport --external:jsonwebtoken --external:@prisma/client --external:passport-google-oauth20 --external:passport-github2 --external:passport-facebook",
     "start": "node dist/index.js",
     "dev": "npm run build && npm run start",
     "postinstall": "prisma generate --schema=../../packages/db/prisma/schema.prisma"
