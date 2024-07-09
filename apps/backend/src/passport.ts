@@ -25,7 +25,7 @@ export function initPassport() {
       {
         clientID: GOOGLE_CLIENT_ID,
         clientSecret: GOOGLE_CLIENT_SECRET,
-        callbackURL: "/auth/google/callback",
+        callbackURL: "https://multiplayer-chess-platform-backend.vercel.app/auth/google/callback",
       },
       async function (accessToken: string, refreshToken: string, profile: any, done: (error: any, user?: any) => void) {
         const user = await db.user.upsert({
