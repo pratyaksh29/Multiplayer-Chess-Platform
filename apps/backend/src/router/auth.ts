@@ -4,7 +4,7 @@ import jwt from 'jsonwebtoken';
 import { db } from '../db';
 const router = Router();
 
-const CLIENT_URL = 'https://multiplayer-chess-platform-frontend.vercel.app/game/random';
+const CLIENT_URL = 'https://multiplayer-chess-platform.onrender.com/game/random';
 const JWT_SECRET = process.env.JWT_SECRET || 'your_secret_key';
 
 interface User {
@@ -46,7 +46,7 @@ router.get('/logout', (req: Request, res: Response) => {
       res.status(500).json({ error: 'Failed to log out' });
     } else {
       res.clearCookie('jwt');
-      res.redirect('https://multiplayer-chess-platform-frontend.vercel.app');
+      res.redirect('https://multiplayer-chess-platform.onrender.com');
     }
   });
 });
