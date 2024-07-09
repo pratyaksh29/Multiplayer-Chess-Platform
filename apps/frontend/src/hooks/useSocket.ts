@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { useUser } from "@repo/store/useUser";
 
-const WS_URL = "https://multiplayer-chess-platform-websocket.vercel.app";
+const WS_URL = "https://multiplayer-chess-platform-ws.onrender.com";
 
 export const useSocket = () => {
     const [socket, setSocket] = useState<WebSocket | null>(null);
