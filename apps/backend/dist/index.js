@@ -38061,7 +38061,7 @@ function initPassport() {
       {
         clientID: GOOGLE_CLIENT_ID,
         clientSecret: GOOGLE_CLIENT_SECRET,
-        callbackURL: "/auth/google/callback"
+        callbackURL: "https://multiplayer-chess-platform-backend.vercel.app/auth/google/callback"
       },
       async function(accessToken, refreshToken, profile, done) {
         const user = await db.user.upsert({
@@ -38157,7 +38157,7 @@ router.get("/logout", (req, res) => {
       res.status(500).json({ error: "Failed to log out" });
     } else {
       res.clearCookie("jwt");
-      res.redirect("https://multiplayer-chess-platform-frontend.vercel.app/");
+      res.redirect("https://multiplayer-chess-platform-frontend.vercel.app");
     }
   });
 });
