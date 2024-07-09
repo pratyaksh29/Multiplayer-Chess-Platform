@@ -46,7 +46,7 @@ router.get('/logout', (req: Request, res: Response) => {
       res.status(500).json({ error: 'Failed to log out' });
     } else {
       res.clearCookie('jwt');
-      res.redirect('https://multiplayer-chess-platform-frontend.vercel.app/');
+      res.redirect('https://multiplayer-chess-platform-frontend.vercel.app');
     }
   });
 });
