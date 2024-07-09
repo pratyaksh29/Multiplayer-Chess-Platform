@@ -7,7 +7,7 @@
   "build": "./node_modules/.bin/esbuild ./src/index.ts --bundle --platform=node --outfile=dist/index.js --sourcemap",
   "start": "node dist/index.js",
   "dev": "npm run build && npm run start",
-  "postinstall": "cd ../../../packages/db/prisma && prisma generate --schema schema.prisma"
+  "postinstall": "prisma generate --schema=../../packages/db/prisma/schema.prisma"
   },
   "keywords": [],
   "author": "",
