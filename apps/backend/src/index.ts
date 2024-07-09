@@ -23,7 +23,7 @@ app.use(passport.authenticate('session'));
 
 app.use(
   cors({
-    origin: "https://multiplayer-chess-platform-frontend.vercel.app",
+    origin: "https://multiplayer-chess-platform.onrender.com",
     methods: "GET,POST,PUT,DELETE",
     credentials: true,
   })
