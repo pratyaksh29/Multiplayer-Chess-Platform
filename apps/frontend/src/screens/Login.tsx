@@ -2,7 +2,7 @@ import Google from "../assets/google.png";
 import Github from "../assets/github.png";
 import { useNavigate } from 'react-router-dom';
 
-const BACKEND_URL = "https://multiplayer-chess-platform-backend.vercel.app";
+const BACKEND_URL = "https://multiplayer-chess-platform-backend.onrender.com";
 
 const Login = () => {
   const navigate = useNavigate();
