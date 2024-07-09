@@ -3,13 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-    "scripts": {
-    "build": "npx esbuild src/index.ts --bundle --platform=node --outfile=dist/index.js",
+  "scripts": {
+    "build": "npx esbuild src/index.ts --bundle --platform=node --outfile=dist/index.js --external:express --external:cors --external:dotenv --external:express-session --external:passport",
     "start": "node dist/index.js",
     "dev": "npm run build && npm run start",
     "postinstall": "prisma generate --schema=../../packages/db/prisma/schema.prisma"
   },
-
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -24,7 +23,8 @@
     "passport": "^0.7.0",
     "passport-facebook": "^3.0.0",
     "passport-github2": "^0.1.12",
-    "passport-google-oauth20": "^2.0.0"
+    "passport-google-oauth20": "^2.0.0",
+    "dotenv": "^16.0.0"
   },
   "devDependencies": {
     "@types/cookie-session": "^2.0.49",
